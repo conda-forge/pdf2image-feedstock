@@ -1,5 +1,5 @@
 {% set name = "pdf2image" %}
-{% set version = "1.12.1" %}
+{% set version = "1.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a0d9906f5507192210a8d5d7ead63145e9dec4bccc4564b1fb644e923913c31c
+  sha256: c63f79b175bb61f09f37dd864830cc30af3d113a37fb3a8e9539f1b7954184e5
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv "
+  script: '{{ PYTHON }} -m pip install . -vv '
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'A wrapper around the pdftoppm and pdftocairo command line tools to convert PDF to a PIL Image list.'
+  summary: A wrapper around the pdftoppm and pdftocairo command line tools to convert PDF to a PIL Image list.
 
 extra:
   recipe-maintainers:
