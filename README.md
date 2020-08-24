@@ -5,7 +5,7 @@ Home: https://github.com/Belval/pdf2image
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A wrapper around the pdftoppm and pdftocairo command line tools to convert PDF to a PIL Image list.
 
