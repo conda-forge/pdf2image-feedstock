@@ -1,5 +1,5 @@
 {% set name = "pdf2image" %}
-{% set version = "1.15.1" %}
+{% set version = "1.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: aa6013c1b5b25ceb90caa34834f1ed343e969cfa532100e1472cfe0e96a639b5
+  sha256: d58ed94d978a70c73c2bb7fdf8acbaf2a7089c29ff8141be5f45433c0c4293bb
 
 build:
   noarch: python
