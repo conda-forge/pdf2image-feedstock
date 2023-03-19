@@ -1,11 +1,11 @@
-About pdf2image
-===============
+About pdf2image-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pdf2image-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Belval/pdf2image
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pdf2image-feedstock/blob/main/LICENSE.txt)
 
 Summary: A wrapper around the pdftoppm and pdftocairo command line tools to convert PDF to a PIL Image list.
 
