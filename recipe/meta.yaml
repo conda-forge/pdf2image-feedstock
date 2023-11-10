@@ -31,7 +31,7 @@ about:
   home: https://github.com/Belval/pdf2image
   license: MIT
   license_family: MIT
-  license_file: LICENSE.txt
+  license_file: LICENSE
   summary: A wrapper around the pdftoppm and pdftocairo command line tools to convert PDF to a PIL Image list.
 
 extra:
