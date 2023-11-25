@@ -11,16 +11,17 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: '{{ PYTHON }} -m pip install . -vv '
 
 requirements:
   host:
     - pip
-    - python >=3
+    - python >=3.7
   run:
-    - python >=3
+    - python >=3.7
     - pillow
+    - poppler
 
 test:
   imports:
@@ -30,7 +31,7 @@ about:
   home: https://github.com/Belval/pdf2image
   license: MIT
   license_family: MIT
-  license_file: LICENSE.txt
+  license_file: LICENSE
   summary: A wrapper around the pdftoppm and pdftocairo command line tools to convert PDF to a PIL Image list.
 
 extra:
@@ -39,3 +40,4 @@ extra:
     - benhuff
     - oblute
     - rluria14
+    - m-rossi
