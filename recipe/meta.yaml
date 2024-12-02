@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: eaa959bc116b420dd7ec415fcae49b98100dda3dd18cd2fdfa86d09f112f6d57
 
 build:
@@ -17,15 +17,18 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
+    - setuptools
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - pillow
     - poppler
 
 test:
   imports:
     - pdf2image
+  requires:
+    - python {{ python_min }}
 
 about:
   home: https://github.com/Belval/pdf2image
